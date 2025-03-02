@@ -10,7 +10,7 @@ const handleChange = () => {
   let mainChoice = userChoice.value.trim();
   mainChoice = mainChoice.toLowerCase();
   if (!isValidColor(mainChoice)) {
-    console.log('Invalid Color , Please re-Enter a colour');
+    alert('Invalid Color , Please re-Enter a colour');
   } else {
     colorDiv.style.backgroundColor = mainChoice;
     console.log(mainChoice);
